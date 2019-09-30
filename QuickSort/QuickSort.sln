@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\Quic
 		{BD35534D-E5B2-4C07-B92D-FC18841FF527} = {BD35534D-E5B2-4C07-B92D-FC18841FF527}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort.Test", "QuickSort.Test\QuickSort.Test.csproj", "{27A6F094-33A2-4F59-BF8B-FB02CD5FEC0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD35534D-E5B2-4C07-B92D-FC18841FF527} = {BD35534D-E5B2-4C07-B92D-FC18841FF527}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{71B89AE7-FBEA-459D-BCF0-10200D4BAD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B89AE7-FBEA-459D-BCF0-10200D4BAD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B89AE7-FBEA-459D-BCF0-10200D4BAD1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A6F094-33A2-4F59-BF8B-FB02CD5FEC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A6F094-33A2-4F59-BF8B-FB02CD5FEC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A6F094-33A2-4F59-BF8B-FB02CD5FEC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A6F094-33A2-4F59-BF8B-FB02CD5FEC0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
