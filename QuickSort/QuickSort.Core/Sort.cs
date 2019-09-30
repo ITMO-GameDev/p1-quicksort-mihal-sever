@@ -10,7 +10,7 @@ namespace QuickSort.Core
             if (last <= first)
                 return;
 
-            if (last - first < 3)
+            if (last - first < 11)
             {
                 InsertionSort(arr, first, last);
                 return;
@@ -38,7 +38,7 @@ namespace QuickSort.Core
                 {
                     if (arr[j - 1].CompareTo(arr[j]) > 0)
                     {
-                        Swap(ref arr[j], ref arr[j - 1]);
+                        Utility.Swap(ref arr[j], ref arr[j - 1]);
                     }
                 }
             }
@@ -85,7 +85,7 @@ namespace QuickSort.Core
                 if (f >= l)
                     break;
 
-                Swap(ref arr[f++], ref arr[l--]);
+                Utility.Swap(ref arr[f++], ref arr[l--]);
             }
             return l;
         }
@@ -94,13 +94,6 @@ namespace QuickSort.Core
         {
             InsertionSort(arr, 0, arr.Length - 1);
             return arr[arr.Length / 2];
-        }
-
-        private static void Swap<T>(ref T a, ref T b)
-        {
-            T temp = a;
-            a = b;
-            b = temp;
         }
     }
 }
